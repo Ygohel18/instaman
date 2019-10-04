@@ -1,7 +1,13 @@
 # instaman
 Instagram Account Management System on Docker
 
+Build
+=========
+
+    cd instaman
+    docker build -t instaman .
+
 Run
 =====
 
-    ./run.sh
+    docker run -ti --rm -p 5000:5000 instaman
