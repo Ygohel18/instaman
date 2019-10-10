@@ -10,4 +10,4 @@ Build
 Run
 =====
 
-    docker run -ti --rm -p 5000:5000 instaman
+    docker run -ti --rm -p 5000:5000 --name instaman_app instaman

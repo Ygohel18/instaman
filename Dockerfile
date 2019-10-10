@@ -1,8 +1,8 @@
 FROM python:alpine
 ENV PYTHONUNBUFFERED 1
-RUN mkdir /src
-WORKDIR /src
-COPY . /src/
+RUN mkdir /app
+WORKDIR /app
+COPY * /app/
 EXPOSE 5000
 RUN pip install -r requirements.txt
-ENTRYPOINT ["python", "/src/app.py"]
+ENTRYPOINT ["python", "/app/src/app.py"]
