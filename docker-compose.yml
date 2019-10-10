@@ -1,6 +1,14 @@
 version: '3'
 services:
   web:
+    image: nginx:alpine
+    ports:
+      - '8080:80'
+    volumes:
+      - '.:/app'
+      - assets:/app/assets
+      - ./nginx.conf:/etc/nginx/conf.d/default.conf:ro
+  backend:
     build: .
     ports:
       - '5000:5000'

@@ -1,5 +1,5 @@
 const r = name => require(`./pages/${name}.vue`).default
 
 export default [
-    {path: '/', component: r('Login')},
+    {path: '/login', component: r('Login')},
 ]
