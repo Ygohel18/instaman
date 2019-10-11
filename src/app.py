@@ -4,9 +4,9 @@ from flask import Flask, escape, request, render_template
 app = Flask(__name__)
 
 
-@app.route('/data')
-def index():
-    return {'one': 1}
+@app.route('/api/context')
+def context():
+    return {'session': 1}
 
 
 if __name__ == "__main__":

@@ -1,23 +1,16 @@
 <template>
-<div>
-    <div>LOGIN</div>
-    <router-link to="/accounts/new" tag="button">TEST</router-link>
-</div>
+    <div>INDEX</div>
 </template>
 
 <script>
+import AuthMixin from 'src/mixins/AuthMixin'
+
 export default {
     data: function () {
         return {
         }
     },
-    beforeCreate() {
-        this.$root.Context.get().then(resp => {
-            if (resp.body.session) {
-                this.$router.push('/')
-            }
-        })
-    },
+    mixins: [AuthMixin],
     methods: {
     },
     notifications: {

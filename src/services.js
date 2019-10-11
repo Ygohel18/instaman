@@ -1,5 +1,5 @@
 export default {
-    Data() {
-        return this.$resource(this.apiUrl + 'data')
+    Context() {
+        return this.$resource(this.apiUrl + 'context')
     },
 }

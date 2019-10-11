@@ -1,6 +1,7 @@
 # Emacs auto-save
 *~
 yarn.lock
+/assets
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
