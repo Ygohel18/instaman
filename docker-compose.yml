@@ -21,7 +21,7 @@ services:
   frontend:
     restart: always
     image: node:alpine
-    command: "yarn run --cwd=/app webpack"
+    command: "yarn run --cwd=/app docker"
     volumes:
       - .:/app
       - node_modules:/app/node_modules

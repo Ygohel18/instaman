@@ -22,13 +22,14 @@
         "vue-style-loader": "^4.1.0",
         "vue-template-compiler": "^2.5.16",
         "webpack": "^4.29.0",
-        "webpack-bundle-analyzer": "^2.13.1",
+        "webpack-bundle-analyzer": ">=3.3.2",
         "webpack-cli": "^3.2.1"
     },
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
         "build": "./node_modules/.bin/webpack",
-        "webpack": "yarn install && ./node_modules/.bin/webpack --display-error-details --watch"
+        "webpack": "./node_modules/.bin/webpack --display-error-details --watch",
+        "docker": "yarn install && ./node_modules/.bin/webpack --display-error-details --watch"
     },
     "keywords": [
         "instagram"
